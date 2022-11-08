@@ -1,6 +1,6 @@
 import React from 'react'
 import cover from '../Images/cover.png'
-/* import { HomeStyle } from './HomeStyle'; */
+/* import './HomeStyle.css'; */
 import style from "styled-components";
 
 
@@ -12,29 +12,72 @@ const Home = () => {
     `
    const ContainerHome = style.div`
     height: 100vh;
+    box-sizing: border-box;         /*  todo este grupo de 4 propiedades ayudan a q ocupe todo viewport de la pantalla*/
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+     }
     `
 
     const Title = style.h1`
     fond-size: 1.8rem;
     font-family: font-file-82132;
-    font-weight: 400;
-    padding-top: 3%;
+    font-weight: 600;
+    padding-top: 12%;
+    color: #19ad99;
+
+    @media only screen and (min-width: 768px) {
+      font-weight: 900;
+      padding-top: 0;
+      font-size: 3rem;
+    }
     `
+
+   const ContainerTitleParagraph= style.div`
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+   `
 
     const Paragraph = style.p`
     fond-size: 1.4rem;
     font-family: "Open Sans",sans-serif;
+    color: white;
+    padding-top: 5px;
+    padding-right: 40%;
+    font-size: 15px;
+
+    @media only screen and (min-width: 768px) {
+     font-size: 20px;
+     padding-right: 46%;
+    }
+    `
+    const ContainerImagenButton = style.div`
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     `
 
     const Button = style.button`
     cursor: pointer;
     font-size: 1em;
-    margin: 1em;
+    margin-top: 11%;
     border: 2px solid #19ad99;
     color: #19ad99;
     background-color: rgba(254, 171, 222, 1);
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: all .3s ease;
 
     &:hover {
@@ -42,23 +85,30 @@ const Home = () => {
         color: white;
     }
 
+    @media only screen and (min-width: 768px) {
+      margin-top: 0;
+     }
     `
    const ImageCover = style.img `
-    whith: 30%;
+   width: 80%;
+
+    @media only screen and (min-width: 768px) {
+      width: 80%;
+     }
    `
 
     return (
     <>
     <HomeStyle>
     <ContainerHome>
-        <Title>Hola, <br/>soy Elizabeth Chillcce, <br/>web developer</Title>
-        <Paragraph>Front-End developer</Paragraph>
-        <div>
+        <ContainerTitleParagraph>
+            <Title>Hola, <br/>soy Elizabeth Chillcce, <br/>web developer</Title>
+            <Paragraph>Front-End developer</Paragraph>
+        </ContainerTitleParagraph>
+        <ContainerImagenButton>
+        <ImageCover src={cover} alt="cover" /> 
           <Button>Contáctame</Button>
-        </div>
-        <div>
-        <ImageCover src={cover} width="16%" alt="cover" /> 
-        </div>
+        </ContainerImagenButton>
     </ContainerHome>
     </HomeStyle>
 

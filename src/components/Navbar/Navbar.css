@@ -1,0 +1,22 @@
+nav{
+    background-color: #070743;
+    position: relative;
+    display: flex;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+}
+
+.linkStyle{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-menu{
+    color: white;   /* con este estilo alrededor del icono burger se pone blanco */
+}
