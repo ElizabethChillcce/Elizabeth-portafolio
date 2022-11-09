@@ -79,6 +79,8 @@ const Home = () => {
     font-weight: bold;
     border-radius: 7px;
     transition: all .3s ease;
+    padding: 6px 12px;
+    text-transform: uppercase;
 
     &:hover {
         background: #19ad99;
@@ -87,6 +89,7 @@ const Home = () => {
 
     @media only screen and (min-width: 768px) {
       margin-top: 0;
+      padding: 10px 25px;
      }
     `
    const ImageCover = style.img `
