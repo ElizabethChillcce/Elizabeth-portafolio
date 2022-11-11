@@ -12,9 +12,6 @@ const Home = () => {
     `
    const ContainerHome = style.div`
     height: 100vh;
-    box-sizing: border-box;         /*  todo este grupo de 4 propiedades ayudan a q ocupe todo viewport de la pantalla*/
-    margin: 0;
-    padding: 0;
 
     display: flex;
     flex-direction: column;
@@ -32,7 +29,7 @@ const Home = () => {
     fond-size: 1.8rem;
     font-family: font-file-82132;
     font-weight: 600;
-    padding-top: 12%;
+    padding-top: 13%;
     color: #19ad99;
 
     @media only screen and (min-width: 768px) {
