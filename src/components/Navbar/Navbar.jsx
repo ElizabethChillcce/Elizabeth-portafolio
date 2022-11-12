@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="navbar navbar-expand-sm">
+        <nav className="navbar navbar-expand-sm fixed-top">         {/* fixed-top sirve para q el navbar se muestre en todas las secciones */}
             <div className="container-fluid">
               <img src={logo} className="img-fluid" width="7%" alt="logo"  />
               <button className="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">     {/* aqui agregue el clas btn-menu */}
@@ -33,14 +33,23 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav ms-auto">                     {/* ms-auto sirve p enviar a la derecha los link */}
                   <li className="nav-item">
-                    <a className="nav-link" >
+                  <a  className="nav-link" href="/">   {/* aqui hice el cambio */}
+                         Inicio
+                      </a>
+
+                    {/* <a className="nav-link" >
                       <Link  to="/" className="linkStyle">Inicio</Link>
-                    </a>
+                    </a> */}
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link">
+                    {/* <a className="nav-link">
                       <Link  to="/about" className="linkStyle">Sobre mi</Link>
-                    </a>
+                    </a> */}
+
+                      <a  className="nav-link" href="#about">   {/* aqui hice el cambio */}
+                         Sobre mí
+                      </a>
+
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" >

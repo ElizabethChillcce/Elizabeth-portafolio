@@ -1,7 +1,7 @@
 import React from 'react'
 import Eli from '../Images/Eli.png'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import "./About.css";
+import "../Css/About.css";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         </div>
          
          <div>
-            <img src={Eli} alt="logo"/> 
+            <img src={Eli} style={{width:"25%"}}alt="logo"/> 
          </div>
          <div>
             <a><a href="https://github.com/ElizabethChillcce" target="_blank" rel="noreferrer"><FaGithub/></a>

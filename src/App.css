@@ -8,6 +8,15 @@
     text-decoration: none;
 }
 
-/* body {
-  min-height: 100vh;
-} */
+html{
+  scroll-behavior: smooth;
+  }
+
+body {
+  background-color: rgba(254, 171, 222, 1)
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
