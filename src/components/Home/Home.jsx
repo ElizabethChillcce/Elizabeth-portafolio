@@ -1,23 +1,27 @@
 import React from 'react'
 import cover from '../Images/cover.png'
-/* import './HomeStyle.css'; */
+import './HomeStyle.css';
 import style from "styled-components";
 import About from "./About";
+import fondo from"../Images/fondo.png";
 
 
 const Home = () => {
 
 
-    const HomeStyle = style.section`
-    display: flex;
+    const HomeStyle = style.div`
+   /*  display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    min-height: 100vh; */
+    
+    position: relative;
 
     @media only screen and (min-width: 768px) {
-      display: flex;
+      /* display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-evenly;*/
      }
     `
     const Title = style.h1`
@@ -25,6 +29,7 @@ const Home = () => {
     font-family: font-file-82132;
     font-weight: 600;
     color: #19ad99;
+    position: absolute;
 
     @media only screen and (min-width: 768px) {
       font-weight: 900;
@@ -40,6 +45,7 @@ const Home = () => {
    align-items: center;
    margin-top: 100px;
    color: white;
+   position: absolute;
 
    @media only screen and (min-width: 768px) {
     background-color: green;
@@ -105,20 +111,44 @@ const Home = () => {
       width: 80%;
      }
    `
+  
+   const ImageMain = style.img `
+   
+   overflow: hidden;
+   background-size: cover;
+   background-repeat: no-repeat;
+   `
+
 
     return (
     <>
-    <HomeStyle>
-        <ContainerTitleParagraph>
+   <section className="container-home">
+      <div className="wrap-title-button">
+          <h3>Hola soy, </h3>
+            <h2>Elizabeth Chillcce </h2>
+          <h4>Front-End developer</h4>
+          <button className="btn-style">Contáctame</button>
+      </div>
+    </section> 
+   {/*  <HomeStyle>
+        
+          <ContainerTitleParagraph>
+              <h2>Hola soy, </h2>
+              <Title>Elizabeth Chillcce </Title>
+              <h3>Front-End developer</h3>
+        </ContainerTitleParagraph>
+        {/* <ContainerTitleParagraph>
               <h2>Hola soy, </h2>
               <Title>Elizabeth Chillcce </Title>
               <h3>Front-End developer</h3>
         </ContainerTitleParagraph>
         <ContainerImagen>
             <ImageCover src={cover} alt="cover" />
-        </ContainerImagen>
-    </HomeStyle>
-        <Button>Contáctame</Button>
+        </ContainerImagen> */}
+    {/*</HomeStyle>
+        <button>Contáctame</button> */}
+
+       
 
       <section id="about">
         <About />

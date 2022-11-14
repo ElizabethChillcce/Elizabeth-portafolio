@@ -1,3 +1,11 @@
 .container-about{
     background-color: rgba(254, 171, 222, 1);
 }
+
+.container-image-about{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    /* display: grid; */
+}
