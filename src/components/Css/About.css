@@ -36,19 +36,23 @@
 
 .container-btn{
     cursor: pointer;
-    font-size: 1em;
+    font-size: 14pxS;
     margin-top: 1%;
     margin-bottom: 10px;
     border: 2px solid #19ad99;
     color: #fff;
     background-color: #19ad99;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 7px;
     transition: all .3s ease;
     padding: 6px 12px;
     text-transform: uppercase;
     text-decoration: none;
     margin-right: auto;
+}
+
+.container-btn a{
+    color:#fff;
 }
 
 .container-btn:hover {
@@ -60,10 +64,21 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    /* align-content: center;
+    justify-content: center; */
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.social-icons a{
+    font-size: 40px;
+    color: #19ad99;
 }
 
 @media only screen and (min-width: 768px) {
-    
+    .container-image-about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
    }
