@@ -1,6 +1,6 @@
 import React from 'react'
 import cover from '../Images/cover.png'
-import './HomeStyle.css';
+import '../Css/Home.css';
 import style from "styled-components";
 import About from "./About";
 import fondo from"../Images/fondo.png";
@@ -79,7 +79,7 @@ const Home = () => {
     }
     `
 
-    const Button = style.button`
+    /* const Button = style.button`
     cursor: pointer;
     font-size: 1em;
     margin-top: 1%;
@@ -97,13 +97,14 @@ const Home = () => {
     &:hover {
         background: #19ad99;
         color: white;
-    }
+    } 
 
     @media only screen and (min-width: 768px) {
       margin-top: 8%;
       padding: 10px 25px;
      }
-    `
+    `*/
+
    const ImageCover = style.img `
    width: 80%;
 

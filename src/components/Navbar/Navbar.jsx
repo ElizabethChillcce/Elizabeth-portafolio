@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../Images/E2.png'
-import style from "styled-components";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -24,57 +23,33 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="navbar navbar-expand-sm fixed-top">         {/* fixed-top sirve para q el navbar se muestre en todas las secciones */}
-            <div className="container-fluid">
-              <img src={logo} className="img-fluid" width="7%" alt="logo"  />
-              <button className="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">     {/* aqui agregue el clas btn-menu */}
-              <span className="navbar-toggler-icon"></span>
-              </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul className="navbar-nav ms-auto">                     {/* ms-auto sirve p enviar a la derecha los link */}
-                  <li className="nav-item">
-                  <a  className="nav-link" href="/">   {/* aqui hice el cambio */}
-                         Inicio
-                      </a>
-
-                    {/* <a className="nav-link" >
-                      <Link  to="/" className="linkStyle">Inicio</Link>
-                    </a> */}
-                  </li>
-                  <li className="nav-item">
-                    {/* <a className="nav-link">
-                      <Link  to="/about" className="linkStyle">Sobre mi</Link>
-                    </a> */}
-
-                      <a  className="nav-link" href="#about">   {/* aqui hice el cambio */}
-                         Sobre mí
-                      </a>
-
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" >
-                      <Link  to="/projects" className="linkStyle">Proyectos</Link>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" >
-                      <Link  to="/skills" className="linkStyle">Habilidades</Link>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" >
-                      <Link  to="/contact" className="linkStyle">Contacto</Link>
-                    </a>
-                  </li>
-                </ul>
+       <nav className="navbar navbar-expand-md navbar-light fixed-top">      {/* con md permite q la letra se siga viendo hasta tablet, recien dspues de 770px cambia a burger */}
+  <div className="container-fluid">          {/* container-fluid permite q se extienda al 100% del ancho */}
+    <img src={logo} width="50" alt="logo de la pagina web"  />
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarToggler">
+      <ul className="navbar-nav ms-auto">      {/* ms-auto sirve p enviar a la derecha los link */}
+        <li className="nav-item">
+          <a className="nav-link" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#about">Sobre mí</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link">Habilidades</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Proyectos</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
-
-
-
-
-
 
     </>
   );

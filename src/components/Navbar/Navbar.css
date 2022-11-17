@@ -1,7 +1,8 @@
-nav{
+.navbar{
     background-color: #070743;
     position: relative;
     display: flex;
+    padding: 1rem;
 }
 
 .nav-link{
