@@ -39,9 +39,9 @@
     font-size: 14pxS;
     margin-top: 1%;
     margin-bottom: 10px;
-    border: 2px solid #19ad99;
+    border: 2px solid #54cfbf;  /* este color debe quedar en el turquesa */
     color: #fff;
-    background-color: #19ad99;
+    background-color: #54cfbf;
     font-weight: 500;
     border-radius: 7px;
     transition: all .3s ease;
@@ -53,6 +53,7 @@
 
 .container-btn a{
     color:#fff;
+    text-decoration: none;
 }
 
 .container-btn:hover {
