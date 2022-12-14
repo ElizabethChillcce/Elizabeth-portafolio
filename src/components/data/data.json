@@ -1,0 +1,52 @@
+{
+    "skills": [
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "React"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg",
+            "skill": "Bootstrap"
+        },
+        {
+            "url": "file:///C:/Users/Carolina/Downloads/javascript-1%20(1).svg",
+            "skill": "Javascript"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "CSS 3"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "HTML 5"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "Firebase"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+            "skill": "Git"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "Github"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "Npm"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+            "skill": "Node Js"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
+            "skill": "Jest"
+        },
+        {
+            "url": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+            "skill": "Figma"
+        }
+    ]
+}

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 import cover from '../Images/cover.png'
 import '../Css/Home.css';
 import style from "styled-components";
 import About from "./About";
 import fondo from"../Images/fondo.png";
+import Skills from "./Skills";
+import data from '../data/data.json';
 
 
 const Home = () => {
@@ -53,19 +55,6 @@ const Home = () => {
    }
    `
 
-    /* const Paragraph = style.p`
-    fond-size: 1.4rem;
-    font-family: "Open Sans",sans-serif;
-    color: white;
-    padding-top: 5px;
-    padding-right: 40%;
-    font-size: 15px;
-
-    @media only screen and (min-width: 768px) {
-     font-size: 20px;
-     padding-right: 46%;
-    }
-    ` */
     const ContainerImagen = style.div`
     display: flex;
     flex-direction: column;
@@ -131,29 +120,27 @@ const Home = () => {
           <button className="btn-style">Contáctame</button>
       </div>
     </section> 
-   {/*  <HomeStyle>
-        
-          <ContainerTitleParagraph>
-              <h2>Hola soy, </h2>
-              <Title>Elizabeth Chillcce </Title>
-              <h3>Front-End developer</h3>
-        </ContainerTitleParagraph>
-        {/* <ContainerTitleParagraph>
-              <h2>Hola soy, </h2>
-              <Title>Elizabeth Chillcce </Title>
-              <h3>Front-End developer</h3>
-        </ContainerTitleParagraph>
-        <ContainerImagen>
-            <ImageCover src={cover} alt="cover" />
-        </ContainerImagen> */}
-    {/*</HomeStyle>
-        <button>Contáctame</button> */}
+  
 
        
 
       <section id="about">
         <About />
       </section>
+      <section>
+             
+        <h3>Habilidades</h3>
+      {/*  {data.map((info) => (
+            <div key={info.skills}> */}
+              <Skills
+              /*   title={info.title}
+                image={info.url} */
+              />
+          {/*   </div>
+          ))} */}
+         
+      </section>
+
     </>
   )
 }
