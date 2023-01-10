@@ -130,14 +130,14 @@ const Home = () => {
       <section>
              
         <h3>Habilidades</h3>
-      {/*  {data.map((info) => (
-            <div key={info.skills}> */}
-              <Skills
-              /*   title={info.title}
-                image={info.url} */
+          {data.skills.map((info, index) => (
+            
+              <Skills key={index}
+                skill= {info.skill}
+                url={info.url}
               />
-          {/*   </div>
-          ))} */}
+            ))}
+         
          
       </section>
 
